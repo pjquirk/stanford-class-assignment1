@@ -41,7 +41,7 @@
     
     if ([self.cards count])
     {
-        int index = arc4random() & [self.cards count];
+        int index = arc4random() % [self.cards count];
         card = self.cards[index];
         [self.cards removeObjectAtIndex:index];
     }
