@@ -8,6 +8,11 @@
 
 #import "Card.h"
 
-@interface Deck : Card
+@interface Deck : NSObject
+
+- (void)addCard:(Card*)card;
+- (void)addCard:(Card*)card atTop:(BOOL)atTop;
+
+- (Card*)getRandomCard;
 
 @end
