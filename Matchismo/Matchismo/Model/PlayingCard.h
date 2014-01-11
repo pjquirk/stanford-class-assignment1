@@ -13,4 +13,7 @@
 @property (nonatomic) NSUInteger rank;
 @property (nonatomic,strong) NSString *suit;
 
++(NSArray*)validSuits;
++(NSUInteger)maxRank;
+
 @end

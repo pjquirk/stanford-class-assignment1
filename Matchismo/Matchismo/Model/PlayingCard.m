@@ -10,24 +10,38 @@
 
 @implementation PlayingCard
 
+@synthesize suit = _suit;
+
 - (NSString*)contents
 {
-    NSArray* rankStrings = @[@"?",@"A",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"J",@"Q",@"K"];
+    NSArray* rankStrings = [PlayingCard validRanks];
     return [rankStrings[self.rank] stringByAppendingString:self.suit];
 }
 
-@synthesize suit = _suit;
-
 - (void)setSuit:(NSString *)suit
 {
-    NSArray* validSuits = @[@"♣︎",@"♠︎",@"♥︎",@"♦︎"];
-    if ([validSuits containsObject:suit])
+    if ([[PlayingCard validSuits] containsObject:suit])
         _suit = suit;
 }
 
 - (NSString*)suit
 {
     return _suit ? _suit : @"?";
+}
+
++(NSArray*)validSuits
+{
+    return @[@"♣︎",@"♠︎",@"♥︎",@"♦︎"];
+}
+
++(NSArray*)validRanks
+{
+    return @[@"?",@"A",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"J",@"Q",@"K"];
+}
+
++(NSUInteger)maxRank
+{
+    return [[PlayingCard validRanks] count] - 1;
 }
 
 @end
