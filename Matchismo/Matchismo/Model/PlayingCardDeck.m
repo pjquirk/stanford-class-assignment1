@@ -24,6 +24,7 @@
                 PlayingCard* card = [[PlayingCard alloc] init];
                 card.rank = rank;
                 card.suit = suit;
+                NSLog(@"Created card with rank=%lu and suit=%@, contents=%@", (unsigned long)rank, suit, card.contents);
                 [self addCard:card];
             }
         }
