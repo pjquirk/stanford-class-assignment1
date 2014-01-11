@@ -7,16 +7,37 @@
 //
 
 #import "CardGameViewController.h"
+#import "PlayingCardDeck.h"
 
 @interface CardGameViewController ()
-
+@property (strong,nonatomic) PlayingCardDeck* deck;
 @end
 
 @implementation CardGameViewController
 
+- (PlayingCardDeck*)deck
+{
+    if (!_deck)
+        _deck = [[PlayingCardDeck alloc] init];
+    return _deck;
+}
 
 - (IBAction)touchCard:(UIButton *)sender {
-    // do something
+    if ([sender.currentTitle length])
+    {
+        [sender setTitle:@"" forState:UIControlStateNormal];
+        [sender setBackgroundImage:[UIImage imageNamed:@"cardback"]
+                          forState:UIControlStateNormal];
+    }
+    else
+    {
+        Card* card = [self.deck getRandomCard];
+        [sender setTitle:card.contents forState:UIControlStateNormal];
+        [self.deck addCard:card];
+        
+        [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"]
+                          forState:UIControlStateNormal];
+    }
 }
 
 @end
