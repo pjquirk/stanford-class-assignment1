@@ -21,6 +21,7 @@
 		19B568C01881FAD4007A960A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B568A21881FAD4007A960A /* UIKit.framework */; };
 		19B568C81881FAD4007A960A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19B568C61881FAD4007A960A /* InfoPlist.strings */; };
 		19B568CA1881FAD4007A960A /* MatchismoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B568C91881FAD4007A960A /* MatchismoTests.m */; };
+		19B568D51882006B007A960A /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B568D41882006B007A960A /* Card.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		19B568C51881FAD4007A960A /* MatchismoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MatchismoTests-Info.plist"; sourceTree = "<group>"; };
 		19B568C71881FAD4007A960A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		19B568C91881FAD4007A960A /* MatchismoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchismoTests.m; sourceTree = "<group>"; };
+		19B568D31882006B007A960A /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
+		19B568D41882006B007A960A /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,7 @@
 				19B568B01881FAD4007A960A /* Main.storyboard */,
 				19B568B31881FAD4007A960A /* CardGameViewController.h */,
 				19B568B41881FAD4007A960A /* CardGameViewController.m */,
+				19B568D618820070007A960A /* Model */,
 				19B568B61881FAD4007A960A /* Images.xcassets */,
 				19B568A51881FAD4007A960A /* Supporting Files */,
 			);
@@ -150,6 +154,15 @@
 				19B568C61881FAD4007A960A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19B568D618820070007A960A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19B568D31882006B007A960A /* Card.h */,
+				19B568D41882006B007A960A /* Card.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +266,7 @@
 				19B568AF1881FAD4007A960A /* CardGameAppDelegate.m in Sources */,
 				19B568B51881FAD4007A960A /* CardGameViewController.m in Sources */,
 				19B568AB1881FAD4007A960A /* main.m in Sources */,
+				19B568D51882006B007A960A /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
