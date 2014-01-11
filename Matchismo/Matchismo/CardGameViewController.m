@@ -10,12 +10,12 @@
 #import "PlayingCardDeck.h"
 
 @interface CardGameViewController ()
-@property (strong,nonatomic) PlayingCardDeck* deck;
+@property (strong,nonatomic) Deck* deck;
 @end
 
 @implementation CardGameViewController
 
-- (PlayingCardDeck*)deck
+- (Deck*)deck
 {
     if (!_deck)
         _deck = [[PlayingCardDeck alloc] init];
