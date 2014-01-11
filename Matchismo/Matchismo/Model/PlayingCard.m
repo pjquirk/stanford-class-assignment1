@@ -29,6 +29,12 @@
     return _suit ? _suit : @"?";
 }
 
+- (void)setRank:(NSUInteger)rank
+{
+    if (rank < [PlayingCard maxRank])
+        _rank = rank;
+}
+
 +(NSArray*)validSuits
 {
     return @[@"♣︎",@"♠︎",@"♥︎",@"♦︎"];
