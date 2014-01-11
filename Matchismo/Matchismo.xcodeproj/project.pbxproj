@@ -22,6 +22,7 @@
 		19B568C81881FAD4007A960A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19B568C61881FAD4007A960A /* InfoPlist.strings */; };
 		19B568CA1881FAD4007A960A /* MatchismoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B568C91881FAD4007A960A /* MatchismoTests.m */; };
 		19B568D51882006B007A960A /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B568D41882006B007A960A /* Card.m */; };
+		19B568D91882011B007A960A /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B568D81882011B007A960A /* PlayingCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		19B568C91881FAD4007A960A /* MatchismoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchismoTests.m; sourceTree = "<group>"; };
 		19B568D31882006B007A960A /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
 		19B568D41882006B007A960A /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
+		19B568D71882011B007A960A /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCard.h; path = Model/PlayingCard.h; sourceTree = "<group>"; };
+		19B568D81882011B007A960A /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = Model/PlayingCard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +164,8 @@
 			children = (
 				19B568D31882006B007A960A /* Card.h */,
 				19B568D41882006B007A960A /* Card.m */,
+				19B568D71882011B007A960A /* PlayingCard.h */,
+				19B568D81882011B007A960A /* PlayingCard.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 				19B568AF1881FAD4007A960A /* CardGameAppDelegate.m in Sources */,
 				19B568B51881FAD4007A960A /* CardGameViewController.m in Sources */,
 				19B568AB1881FAD4007A960A /* main.m in Sources */,
+				19B568D91882011B007A960A /* PlayingCard.m in Sources */,
 				19B568D51882006B007A960A /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
